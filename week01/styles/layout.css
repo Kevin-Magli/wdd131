@@ -1,0 +1,50 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    background-color: rgb(50, 50, 50);
+    color: white;
+    height: 2em;
+    padding: 5%;
+    margin: 0 auto;
+    font-size: large;
+}
+nav {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+}
+nav a:hover {
+    color: blue;
+}
+main {
+    background-color: lightgray;
+    color: black;
+    height: 20em;
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+
+}
+h3 {
+    padding-left: 5%;
+}
+aside {
+    background-color: white;
+    color: black;
+    height: 100%;
+}
+footer {
+    background-color: rgb(50, 50, 50);
+    color: white;
+    height: 2em;
+    padding: 5%;
+    margin: 0 auto;
+}
