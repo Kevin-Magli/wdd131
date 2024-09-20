@@ -32,7 +32,6 @@ main {
     height: 20em;
     display: grid;
     grid-template-columns: 1.5fr 0.5fr;
-
 }
 h3 {
     padding-left: 5%;
