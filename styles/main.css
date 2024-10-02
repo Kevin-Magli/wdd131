@@ -89,7 +89,7 @@ footer {
     height: 100%;
 }
 footer * {
-    padding-top: -10px;
+    margin-top: 0px;
 }
 .footer-top {
     display: flex;
