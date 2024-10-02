@@ -1,0 +1,121 @@
+:root {
+    --background-color: #282c34;
+    --layer-color: #3D4351;
+    --text-color: #abb2bf;
+    --color-red: #e06c75;
+    --color-green: #98c379;
+    --color-yellow: #e5c07b;
+    --color-blue: #61afef;
+    --color-magenta: #c678dd;
+    --color-cyan: #56b6c2;
+    --color-white: #abb2bf;
+    --color-black: #282c34;
+    --default-font: 'Exo 2', sans-serif;
+    --font-title-size: 1.5em; 
+    --font-size: 1.2em;
+
+    font-family: var(--default-font);
+    font-size: var(--font-size);
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+
+/* BACKGROUND COLOR */
+
+body {
+    background-color: var(--background-color);
+}
+
+
+/* HEADER AND NAV CSS */
+
+header {
+    text-align: center;
+    background-color: var(--color-red);
+    color: var(--color-black);
+    margin-top: -30px;
+
+}
+header h1 {
+    font-size: 2em;
+    padding: 30px;
+}
+nav {
+    background-color: var(--layer-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+
+}
+nav a {
+    text-decoration: none;
+    color: var(--color-white);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+nav a:hover {
+    color: var(--color-cyan);
+}
+nav a:active {
+    color: var(--color-magenta);
+}
+nav .nav-link {
+    display: none;
+}
+#hamburger-menu {
+    font-size: 200%;
+    background: none;
+    border: none;
+    color: var(--color-white);
+}
+#hamburger-menu:hover {
+    color: var(--color-cyan);
+    cursor: pointer;
+}
+
+
+/* FOOTER CSS */
+
+footer {
+    text-align: center;
+    background-color: var(--layer-color);
+    padding: 20px;
+    height: 100%;
+}
+footer * {
+    padding-top: -10px;
+}
+.footer-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer #year {
+    color: var(--color-red);
+}
+footer #author {
+    color: var(--color-green);
+}
+footer #location {
+    color: var(--color-blue);
+}
+footer #lastModifiedText {
+    color: var(--color-yellow); 
+}
+footer .separator {
+    display: none;
+}
+
+
+
