@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main-large.css">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Munich - Germany</h1>
+        <nav>
+            <button id="hamburger-menu">&#9776;</button>
+            <a class="nav-link" href="https://www.linkedin.com/in/kevin-magliocchi/">LinkedIn</a>
+            <a class="nav-link" href="https://byui.instructure.com/">I-Learn</a>
+            <a class="nav-link" href="https://www.churchofjesuschrist.org/study/scriptures/bofm/mos/2?lang=eng&id=p41#p41">Scripture</a>
+            <a class="nav-link" href="#">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 1080px)" srcset="images/place/munich-large.webp">
+                <source media="(min-width: 400px)" srcset="images/place/munich-medium.webp">
+                <img src="images/place/munich-small.webp" alt="image" width="500px">
+            </picture>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <h2>Data</h2>
+                <img id="location-icon" src="images/location-icon.svg" width="20%" alt="target icon">
+                <span id="data">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, quae. Vel et sint, reprehenderit quis beatae, consectetur ad sit, inventore iusto ut illum deleniti totam? Ea amet debitis nobis repellendus.</span>
+            </div>
+            <div class="card">
+                <h2>Weather</h2>
+                <img id="weather-icon" src="images/weather-icon.svg" width="20%" alt="weather icon">
+                <span id="weather">
+                    <b>Temperature:</b> 10°C<br> 
+                    <b>Condition:</b> Partly Cloudy<br>
+                    <b>Wind:</b> Wind 5 km/h<br>
+                    <b>Wind Chill:</b> <span id="wind-chill"></span>°C<br>
+
+                </span>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-top">
+            <p id="year">&copy; <span id="currentYear">placeholder</span></p>
+            <p class="separator">|</p>
+            <p id="author">Kevin Magliocchi</p>
+            <p class="separator">|</p>
+            <p id="location">São Paulo - Brazil</p>
+        </div>
+        <div class="footer-bottom">
+            <p id="lastModifiedText">Last Modified: <span id="lastModified">placeholder</span></p>
+        </div>
+    </footer>
+</body>
+</html>

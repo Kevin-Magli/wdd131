@@ -1,0 +1,27 @@
+.hero picture img{
+    width: 100%;
+    padding: 30px 0;
+    z-index: 0;
+}
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 500px;
+    margin: 0 0 30px;
+    border: 1px solid #ddd;
+}
+.card * {
+    margin: 30px;
+}
+#location-icon, #weather-icon {
+    filter: invert(70%);
+}

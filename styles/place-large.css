@@ -1,0 +1,38 @@
+@media screen and (min-width: 1200px) {
+    main {
+        position: relative;
+    }
+    .cards {
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: calc(100% - 60px);
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 0 30px;
+    }
+    .card {
+        background-color: rgba(255, 255, 255, 0.5);
+        color: rgb(34, 34, 34);
+        height: 500px;
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        width: 30%;
+    }
+    .card p {
+        margin: 10px; /* Smaller margin for all elements inside the card */
+        font-size: 16px; /* Smaller font size for text */
+        padding: 30px
+    }
+    .card:nth-child(0) {
+        margin-top: 200px;
+    }
+    .card:nth-child(1) {
+        margin-top: -200px;
+    }
+
+    #location-icon, #weather-icon {
+        filter: invert(0);
+    }
+}
