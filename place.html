@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Munich - Germany</title>
+    <meta name="description" content="A project to learn about Munich, Germany">
+    <meta name="author" content="Kevin Magliocchi">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -31,24 +33,32 @@
             <picture>
                 <source media="(min-width: 1080px)" srcset="images/place/munich-large.webp">
                 <source media="(min-width: 400px)" srcset="images/place/munich-medium.webp">
-                <img src="images/place/munich-small.webp" alt="image" width="500px">
+                <img src="images/place/munich-small.webp" alt="image">
             </picture>
         </div>
         <div class="cards">
             <div class="card">
-                <h2>Data</h2>
-                <img id="location-icon" src="images/location-icon.svg" width="20%" alt="target icon">
-                <span id="data">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, quae. Vel et sint, reprehenderit quis beatae, consectetur ad sit, inventore iusto ut illum deleniti totam? Ea amet debitis nobis repellendus.</span>
+                <h2 id="location-heading">Data</h2>
+                <img id="location-icon" src="images/location-icon.svg" alt="target icon">
+                <span id="data">
+                    <b>Area:</b> 310.7 km²<br>
+                    <b>Population:</b> ~1.5 million (2023)<br>
+                    <b>Capital:</b> Bavaria<br>
+                    <b>Languages Spoken:</b> German, Bavarian<br>
+                    <b>Currency:</b> Euro (€)<br>
+                    <b>Time Zone:</b> CET / CEST<br>
+                    <b>Calling Code:</b> +49<br>
+                    <b>Internet TLD:</b> .de
+                </span>
             </div>
             <div class="card">
-                <h2>Weather</h2>
-                <img id="weather-icon" src="images/weather-icon.svg" width="20%" alt="weather icon">
+                <h2 id="weather-heading">Weather</h2>
+                <img id="weather-icon" src="images/weather-icon.svg" alt="weather icon">
                 <span id="weather">
                     <b>Temperature:</b> 10°C<br> 
                     <b>Condition:</b> Partly Cloudy<br>
-                    <b>Wind:</b> Wind 5 km/h<br>
+                    <b>Wind:</b> Wind 16 km/h<br>
                     <b>Wind Chill:</b> <span id="wind-chill"></span>°C<br>
-
                 </span>
             </div>
         </div>

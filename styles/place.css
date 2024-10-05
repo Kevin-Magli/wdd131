@@ -18,10 +18,16 @@
     max-width: 500px;
     margin: 0 0 30px;
     border: 1px solid #ddd;
+    height: 600px;
 }
 .card * {
-    margin: 30px;
+    margin: 10px;
 }
 #location-icon, #weather-icon {
     filter: invert(70%);
+    width: 20%;
+}
+
+#location-heading, #weather-heading {
+    margin-bottom: 50px;
 }

@@ -18,7 +18,7 @@
         color: rgb(34, 34, 34);
         height: 500px;
         box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-        width: 30%;
+        width: 40%;
     }
     .card p {
         margin: 10px; /* Smaller margin for all elements inside the card */
@@ -33,6 +33,21 @@
     }
 
     #location-icon, #weather-icon {
-        filter: invert(0);
+        display: none;
     }
+    #location-heading::after {
+        content: "📍";
+    }
+    
+    #weather-heading::after {
+        content: "🌥️";
+    }
+    #location-heading, #weather-heading {
+        background-color: rgba(32, 32, 32, 0.5);
+        color: rgb(226, 226, 226);
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    
 }
