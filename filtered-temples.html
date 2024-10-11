@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Temple Album Page">
+    <meta name="author" content="Kevin Magliocchi">
+    <title>Filtered Temple Album</title>
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/filtered-temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Filtered Temple Album</h1>
+        <nav>
+            <p>Filters</p>
+            <button id="hamburger-menu">&#9776;</button>
+            <a class="nav-link" href="#home">Home</a>
+            <a class="nav-link" href="#old">Old</a>
+            <a class="nav-link" href="#new">New</a>
+            <a class="nav-link" href="#large">Large</a>
+            <a class="nav-link" href="#small">Small</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Temple Gallery</h2>
+        <div id="gallery"></div>
+    </main>
+    <footer>
+        <div class="footer-top">
+            <p id="year">&copy; <span id="currentYear">placeholder</span></p>
+            <p class="separator">|</p>
+            <p id="author">Kevin Magliocchi</p>
+            <p class="separator">|</p>
+            <p id="location">São Paulo - Brazil</p>
+        </div>
+        <div class="footer-bottom">
+            <p id="lastModifiedText">Last Modified: <span id="lastModified">placeholder</span></p>
+        </div>
+    </footer>
+</body>
+</html>
