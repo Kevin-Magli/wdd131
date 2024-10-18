@@ -30,7 +30,7 @@ label {
 }
 /* Product Name */
 .productName select {
-    width: 40%;
+    width: 50%;
     padding: 10px;
     background-color: var(--background-color);
     color: var(--text-color);
@@ -85,7 +85,7 @@ input[type="radio"] {
 
 /* Date of installation */
 .dateOfInstallation input {
-    width: 30%;
+    width: 50%;
     padding: 10px;
     background-color: var(--background-color);
     color: var(--text-color);
@@ -96,39 +96,39 @@ input[type="radio"] {
 }
 
 /* Features */
-.features div {
+#features div {
     display: flex;
     align-items: center; 
 }
 
-.features input[type="checkbox"] {
+#features input[type="checkbox"] {
     margin-right: 10px; 
 }
 
 
-.features input[type="checkbox"] {
+#features input[type="checkbox"] {
     width: 20px;
     height: 20px;
 }
 
-.features label {
+#features label {
     font-size: 1rem;
     margin-top: 7px;
 }
 
-.features input[type="checkbox"]{
+#features input[type="checkbox"]{
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
     background-color: var(--color-white);
 }
-.features input[type="checkbox"]:hover{
+#features input[type="checkbox"]:hover{
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
     background-color: var(--color-cyan);
 }
-.features input[type="checkbox"]:checked{
+#features input[type="checkbox"]:checked{
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
