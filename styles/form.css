@@ -1,0 +1,188 @@
+
+
+main {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: var(--background-color);
+}
+form {
+    background-color: var(--layer-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 80%;
+}
+div {
+    padding-bottom: 10px;
+}
+label {
+    display: block;
+    padding-bottom: 10px;
+}
+
+.productName label::after, .overallRating #ratingLabel::after, .dateOfInstallation label::after {
+    content: "*";
+}
+/* Product Name */
+.productName select {
+    width: 40%;
+    padding: 10px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: solid;
+    border-width: 1px;
+    border-color: var(--text-color);
+    font-family: var(--default-font);
+}
+
+/* Overall Rating */
+.overallRating .stars {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 0 10px 0;
+}
+/* stars */
+input[type="radio"] {
+	display: none;
+	position: relative;
+	caret-color: rgba(0, 0, 0, 0);
+}
+
+.rating {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: left;
+}
+
+.rating > label {
+	color: var(--color-yellow);
+	width: 30px;
+	height: 30px;
+	font-size: 2rem;
+	margin-left: 5px;
+	display: flex;
+	align-items: center;
+	caret-color: rgba(0, 0, 0, 0);
+}
+
+.rating > label:hover {
+	color: #ffffff;
+}
+
+.rating > label::before {
+	content: "\2606";
+}
+
+.rating input:checked ~ label::before {
+	content: "\2605";
+}
+
+/* Date of installation */
+.dateOfInstallation input {
+    width: 30%;
+    padding: 10px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: solid;
+    border-width: 1px;
+    border-color: var(--text-color);
+    font-family: var(--default-font);
+}
+
+/* Features */
+.features div {
+    display: flex;
+    align-items: center; 
+}
+
+.features input[type="checkbox"] {
+    margin-right: 10px; 
+}
+
+
+.features input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+.features label {
+    font-size: 1rem;
+    margin-top: 7px;
+}
+
+.features input[type="checkbox"]{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: var(--color-white);
+}
+.features input[type="checkbox"]:hover{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: var(--color-cyan);
+}
+.features input[type="checkbox"]:checked{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: var(--color-blue);
+}
+/* Written Review */
+.writtenReview textarea {
+    width: 90%;
+    height: 100px;
+    padding: 10px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: solid;
+    border-width: 1px;
+    border-color: var(--text-color);
+    font-family: var(--default-font);
+}
+.writtenReview label::after, .username label::after {
+    content: " (optional)";
+    font-size: 0.8rem;
+    color: var(--color-magenta);
+}
+
+/* Username */
+.username input {
+    width: 90%;
+    padding: 10px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: solid;
+    border-width: 1px;
+    border-color: var(--text-color);
+    font-family: var(--default-font);
+}
+
+/* Submit Button */
+.submitButton input[type="submit"] {
+    width: 50%;
+    padding: 10px;
+    background-color: var(--color-white);
+    color: var(--background-color);
+    border: none;
+    border-radius: 5px;
+    font-family: var(--default-font);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.submitButton input[type="submit"]:hover {
+    background-color: var(--color-green);
+    transition: background-color 0.3s ease-in-out;
+} 
+.submitButton {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}

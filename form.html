@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main-large.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+    <title>Product Review</title>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+        <nav>
+            <button id="hamburger-menu">&#9776;</button>
+            <a class="nav-link" href="https://www.linkedin.com/in/kevin-magliocchi/">LinkedIn</a>
+            <a class="nav-link" href="https://byui.instructure.com/">I-Learn</a>
+            <a class="nav-link" href="https://www.churchofjesuschrist.org/study/scriptures/bofm/mos/2?lang=eng&id=p41#p41">Scripture</a>
+            <a class="nav-link" href="#">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <div class="productName">
+                <label for="productName">Product Name</label>
+                <select name="product" id="product" required>
+                    <option value="placeholder" disabled selected>Select a Product...</option>
+                    <option value="1">Product 1</option>
+                    <option value="2">Product 2</option>
+                    <option value="3">Product 3</option>
+                    <option value="4">Product 4</option>
+                    <option value="5">Product 5</option>
+                </select>
+            </div>
+            <div class="overallRating">
+                <label for="overallRating" id="ratingLabel">Overall Rating</label>
+                <div class="stars rating">
+                    <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+                    <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+                    <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+                    <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+                    <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+                </div>
+            </div>
+            <div class="dateOfInstallation">
+                <label for="installation">Date of Installation</label>
+                <input type="date" id="installation" name="installation" required>
+            </div>
+            <div class="features">
+                <label for="features">Features</label>
+                <div>
+                    <input type="checkbox" name="checkbox" id="checkbox1" value="1">
+                    <label for="checkbox1">Durability</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="checkbox" id="checkbox2" value="2">
+                    <label for="checkbox2">Ease of Use</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="checkbox" id="checkbox3" value="3">
+                    <label for="checkbox3">Performance</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="checkbox" id="checkbox4" value="4">
+                    <label for="checkbox4">Design</label>
+                </div>
+            </div>
+            <div class="writtenReview">
+                <label for="writtenReview">Written Review</label>
+                <textarea name="writtenReview" id="writtenReview"></textarea>
+            </div>
+            <div class="username">
+                <label for="username">Your Name</label>
+                <input type="text" name="username" id="usernameField">
+            </div>
+            <div class="submitButton">
+                <input type="submit" value="Submit Review">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div class="footer-top">
+            <p id="year">&copy; <span id="currentYear">placeholder</span></p>
+            <p class="separator">|</p>
+            <p id="author">Kevin Magliocchi</p>
+            <p class="separator">|</p>
+            <p id="location">São Paulo - Brazil</p>
+        </div>
+        <div class="footer-bottom">
+            <p id="lastModifiedText">Last Modified: <span id="lastModified">placeholder</span></p>
+        </div>
+    </footer>
+</body>
+</html>
