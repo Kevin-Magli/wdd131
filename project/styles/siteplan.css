@@ -1,0 +1,68 @@
+.pallete {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.atom-color-block {
+    height: 20px;
+    width: 20px;
+    margin-left: 20px;
+}
+.atom-color-block:nth-child(1) { background-color: var(--color-red);}
+.atom-color-block:nth-child(2) { background-color: var(--color-green);}
+.atom-color-block:nth-child(3) { background-color: var(--color-yellow);}
+.atom-color-block:nth-child(4) { background-color: var(--color-blue);}
+.atom-color-block:nth-child(5) { background-color: var(--color-magenta);}
+.atom-color-block:nth-child(6) { background-color: var(--color-cyan);}
+
+
+.dracula-color-block {
+    height: 20px;
+    width: 20px;
+    margin-left: 20px;
+}
+
+
+.dracula-color-block:nth-child(1) { background-color: #6272a4;}
+.dracula-color-block:nth-child(2) { background-color: #8be9fd;}
+.dracula-color-block:nth-child(3) { background-color: #50fa7b;}
+.dracula-color-block:nth-child(4) { background-color: #ffb86c;}
+.dracula-color-block:nth-child(5) { background-color: #ff79c6;}
+.dracula-color-block:nth-child(6) { background-color: #bd93f9;}
+.dracula-color-block:nth-child(7) { background-color: #ff5555;}
+.dracula-color-block:nth-child(8) { background-color: #f1fa8c;}
+
+.catpuccin-color-block {
+    height: 20px;
+    width: 20px;
+    margin-left: 20px;
+}
+
+.catpuccin-color-block:nth-child(1) { background-color: #f5e0dc;}
+.catpuccin-color-block:nth-child(2) { background-color: #f2cdcd;}
+.catpuccin-color-block:nth-child(3) { background-color: #f5c2e7;}
+.catpuccin-color-block:nth-child(4) { background-color: #cba6f7;}
+.catpuccin-color-block:nth-child(5) { background-color: #f38ba8;}
+.catpuccin-color-block:nth-child(6) { background-color: #eba0ac;}
+.catpuccin-color-block:nth-child(7) { background-color: #fab387;}
+.catpuccin-color-block:nth-child(8) { background-color: #f9e2af;}
+.catpuccin-color-block:nth-child(9) { background-color: #a6e3a1;}
+.catpuccin-color-block:nth-child(10) { background-color: #94e2d5;}
+
+
+p {
+    text-align: left;
+    width: 80%;
+}
+
+li {
+    text-align: left;
+}
+
+@media screen and (min-width: 800px) {
+    p {
+        width: 60%;
+    }
+}
