@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A form example for WDD 131 - Kevin Magliocchi">
+    <meta name="author" content="Kevin Magliocchi">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/main-large.css">
     <link rel="stylesheet" href="styles/form.css">
@@ -28,9 +30,9 @@
     <main>
         <form method="get" action="review.html">
             <div class="productName">
-                <label for="productName">Product Name</label>
+                <label for="product">Product Name</label>
                 <select name="product" id="product" required>
-                    <option value="placeholder" disabled selected>Select a Product...</option>
+                    <option value="" disabled selected>Select a Product...</option>
                     <option value="1">Product 1</option>
                     <option value="2">Product 2</option>
                     <option value="3">Product 3</option>
@@ -38,8 +40,8 @@
                     <option value="5">Product 5</option>
                 </select>
             </div>
-            <div class="overallRating">
-                <label for="overallRating" id="ratingLabel">Overall Rating</label>
+            <div id="overallRating">
+                <label for="starsRating" id="ratingLabel">Overall Rating</label>
                 <div class="stars rating">
                     <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
                     <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
@@ -76,11 +78,11 @@
                 <textarea name="writtenReview" id="writtenReview"></textarea>
             </div>
             <div class="username">
-                <label for="username">Your Name</label>
+                <label for="usernameField">Your Name</label>
                 <input type="text" name="username" id="usernameField">
             </div>
             <div class="submitButton">
-                <input type="submit" value="Submit Review">
+                <input type="submit" value="Submit">
             </div>
         </form>
     </main>

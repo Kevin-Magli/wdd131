@@ -15,7 +15,6 @@ form {
     padding: 40px;
     display: flex;
     flex-direction: column;
-    align-items: left;
     width: 80%;
 }
 div {
@@ -26,7 +25,7 @@ label {
     padding-bottom: 10px;
 }
 
-.productName label::after, .overallRating #ratingLabel::after, .dateOfInstallation label::after {
+.productName label::after, #overallRating #ratingLabel::after, .dateOfInstallation label::after {
     content: "*";
 }
 /* Product Name */
@@ -42,7 +41,7 @@ label {
 }
 
 /* Overall Rating */
-.overallRating .stars {
+#overallRating .stars {
     display: flex;
     align-items: center;
     justify-content: space-around;
