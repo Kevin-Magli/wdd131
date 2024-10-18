@@ -40,16 +40,22 @@
                     <option value="5">Product 5</option>
                 </select>
             </div>
-            <div id="overallRating">
-                <label for="starsRating" id="ratingLabel">Overall Rating</label>
-                <div class="stars rating">
-                    <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
-                    <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
-                    <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
-                    <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
-                    <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+            <div class="overallRating">
+                <label for="stars" id="ratingLabel">Overall Rating</label>
+                <div id="stars" class="rating"> <!-- Add class="rating" here -->
+                    <input type="radio" id="onestar" name="stars" value="1" required>
+                    <label for="onestar"></label>
+                    <input type="radio" id="twostar" name="stars" value="2" required>
+                    <label for="twostar"></label>
+                    <input type="radio" id="threestar" name="stars" value="3" required>
+                    <label for="threestar"></label>
+                    <input type="radio" id="fourstar" name="stars" value="4" required>
+                    <label for="fourstar"></label>
+                    <input type="radio" id="fivestar" name="stars" value="5" required>
+                    <label for="fivestar"></label>
                 </div>
             </div>
+            
             <div class="dateOfInstallation">
                 <label for="installation">Date of Installation</label>
                 <input type="date" id="installation" name="installation" required>

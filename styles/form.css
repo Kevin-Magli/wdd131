@@ -25,7 +25,7 @@ label {
     padding-bottom: 10px;
 }
 
-.productName label::after, #overallRating #ratingLabel::after, .dateOfInstallation label::after {
+.productName label::after, #ratingLabel::after, .dateOfInstallation label::after {
     content: "*";
 }
 /* Product Name */
@@ -41,7 +41,7 @@ label {
 }
 
 /* Overall Rating */
-#overallRating .stars {
+#stars {
     display: flex;
     align-items: center;
     justify-content: space-around;
