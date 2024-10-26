@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/project.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="logo">
+            <h1>Athema</h1>
+        </div>
+        <div class="nav-bar">
+            <nav>
+                <a href="project.html">Home</a>
+                <a href="howto.html">How To</a>
+                <a href="builder.html">Builder</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="theme-grid">       
+            <div class="theme-card">
+                <h2>Theme Name</h2>
+                <div class="code-block">
+<pre><code>
+const greet = "Hello, world!"; // String
+let number = 42; // Number
+let isHappy = true; // Boolean
+
+function sayHello(name) { // Function
+    if (isHappy) { // Keyword (if)
+        return `${greet}, ${name}!`; // Template string
+    } else {
+        return 'Not feeling it.'; // String
+    }
+}
+
+let friends = ["Alice", "Bob"]; // Array
+sayHello(friends[0]);
+</code></pre>         
+                </div>
+                <div class="last-row">
+                    <img src="images/theme-logo.webp" alt="theme logo">
+                    <div class="buttons-container">
+                        <div id="diamond-shape">
+                            <p class="arrow-text">"theme" is awesome</p>
+                        </div>
+                        <button id="apply-button">Apply</button>
+                    </div>
+                </div>
+                <div class="theme-colors">
+                    <div class="color"></div>
+                    <div class="color"></div>
+                    <div class="color"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-top">
+            <p id="year">&copy; <span id="currentYear">placeholder</span></p>
+            <p class="separator">|</p>
+            <p id="author">Kevin Magliocchi</p>
+            <p class="separator">|</p>
+            <p id="location">São Paulo - Brazil</p>
+        </div>
+        <div class="footer-bottom">
+            <p id="lastModifiedText">Last Modified: <span id="lastModified">placeholder</span></p>
+        </div>
+    </footer>
+</body>
+</html>

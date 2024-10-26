@@ -1,0 +1,155 @@
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header .logo-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+header .logo-container img {
+    width: 50px;
+    height: 50px;
+}
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.nav-bar a {
+    margin: 0 20px;
+}
+
+
+main {
+    padding: 50px 0px;
+}
+
+.theme-grid {
+    display: flex;
+    justify-content: center;
+/*    border: 1px solid black; */
+}
+
+
+.theme-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 100px;
+    width: auto;
+    padding: 20px;
+}
+
+.theme-card .code-block {
+    font-size: 12px;
+    margin-right: 50px
+}
+
+.theme-card .last-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.theme-card .last-row img {
+    width: 50%;
+    
+}
+
+.theme-card .buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-left: 50px;    
+}
+
+#diamond-shape {
+    width: 100%;
+    background-color: white;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    padding-left: 30px;
+}
+
+.arrow-text {
+    color: black
+}
+
+.buttons-container button {
+    margin-top: 20px;
+}
+
+.theme-colors {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+.theme-colors .color {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 0 5px;
+    border: 1px solid white;
+}
+
+
+footer {
+    text-align: center;
+    background-color: var(--layer-color);
+    padding: 20px;
+    height: 100%;
+}
+footer * {
+    margin-top: 0px;
+}
+.footer-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer #year {
+    color: var(--color-red);
+}
+footer #author {
+    color: var(--color-green);
+}
+footer #location {
+    color: var(--color-blue);
+}
+footer #lastModifiedText {
+    color: var(--color-yellow); 
+}
+footer .separator {
+    display: none;
+}
+
+/* main theme */
+body {
+    background-color: black;
+    color: white;
+}
+
+.nav-bar {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+}
+
+footer {
+    border-top: 1px solid white;
+}
