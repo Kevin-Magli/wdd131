@@ -1,0 +1,13 @@
+.card {
+    padding: 20px;
+    margin: 20px;
+    width: fit-content;
+    display: block;
+    color: rgb(68, 0, 255);
+    background-color: rgb(19, 19, 19);
+
+}
+.controls {
+    display: flex;
+    flex-direction: column;
+}
